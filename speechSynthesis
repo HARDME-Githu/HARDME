@@ -1,0 +1,23 @@
+<script>
+  const mensajes = {
+    es: "Hola, ¿cómo puedo ayudarte?",
+    ay: "Kamisaraki, kunsansa yanapt’añani?",
+    qu: "Allinllachu, imapaq yanapani?",
+    en: "Hi, how can I help you?"
+  };
+
+  function hablar(lang) {
+    const texto = mensajes[lang] || mensajes["es"];
+    const voz = new SpeechSynthesisUtterance(texto);
+    voz.lang = lang === "ay" ? "es-PE" : lang === "qu" ? "es-PE" : lang;
+    speechSynthesis.speak(voz);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const selector = document.querySelector('select');
+    selector.addEventListener('change', () => {
+      const idioma = selector.value;
+      hablar(idioma);
+    });
+  });
+</script>
