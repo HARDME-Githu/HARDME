@@ -168,6 +168,52 @@ footer {
 }
 
 .boton-nav:hover {
+  /* SECCIÓN SERVICIOS - TARJETAS */
+.servicios-section {
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+}
+
+.servicios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.servicio-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+}
+
+.servicio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.servicio-card h3 {
+  margin: 15px 0 10px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.servicio-card p {
+  padding: 0 15px 20px;
+  font-size: 0.95em;
+  color: #555;
+}
+
   background-color: #bfa43d;
   color: #000;
   border-color: #bfa43d;
