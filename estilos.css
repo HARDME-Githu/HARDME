@@ -161,3 +161,15 @@ footer {
     max-width: 300px;
   }
 }
+.boton-nav {
+  border: 2px solid transparent;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.boton-nav:hover {
+  background-color: #bfa43d;
+  color: #000;
+  border-color: #bfa43d;
+  box-shadow: 0 0 8px #bfa43d;
+}
